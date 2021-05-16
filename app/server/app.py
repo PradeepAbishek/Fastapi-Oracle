@@ -7,7 +7,7 @@ from .db.config import PROJECT_NAME
 from .db.connection import get_db, engine
 from .db import tables
 
-# tables.Base.metadata.create_all(bind=engine) # Creates a table
+tables.Base.metadata.create_all(bind=engine) # Creates a table
 
 app = FastAPI(title=PROJECT_NAME)
 
